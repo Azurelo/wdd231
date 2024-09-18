@@ -147,6 +147,7 @@ footer {
     color: white;
     padding: 10px;
     margin-top: 20px;
+    font-family: "PT Mono", system-ui
 }
 
 /* Responsive design for smaller screens */
