@@ -138,7 +138,9 @@ main {
     border: none;
     border-radius: 5px;
 }
-
+.courses button:hover{
+    background-color: #2a405e;
+}
 footer {
     text-align: center;
     background-color: #2a405e;
