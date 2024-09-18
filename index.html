@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justus</title>
+    <meta name="author" content="Justus Schoppmann" />
+    <meta name="description" content="WDD 231 - Web Frontend Development - Justus Schoppmann GitHub Homepage">
+    <title>WDD 231 Homepage</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/get-dates.js"></script>
 </head>
 <body>
-    
+    <header>
+        <div class="profile">
+            <img src="images/profile.jpg" alt="Justus Schoppmann">
+            <h1> Justus S. Schoppmann </h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Chamber</a></li>
+                <li><a href="https://github.com/Azurelo">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/justus-schoppmann-760567202/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="coursework">
+            <h2>Course Work</h2>
+            <ul>
+                <li>0</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section class="location">
+            <h2>Arizona, USA</h2>
+            <img src="images/arizona.jpg" alt="Arizona Sunset">
+            <p>Arizona Sunset</p>
+        </section>
+
+         <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter">
+                <button id="all-btn">All</button>
+                <button id="cse-btn">CSE</button>
+                <button id="wdd-btn">WDD</button>
+            </div>
+            <div class="courses">
+                <button class="cse">CSE 110</button>
+                <button class="wdd">WDD 130</button>
+                <button class="cse">CSE 111</button>
+                <button class="cse">CSE 210</button>
+                <button class="wdd">WDD 131</button>
+                <button class="wdd">WDD 231</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&#169; <span id="currentyear"></span>
+            Justus Schoppmann 
+            Arizona</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
