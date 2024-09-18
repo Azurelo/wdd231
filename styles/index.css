@@ -82,6 +82,26 @@ main {
     padding: 20px;
     border-radius: 8px;
 }
+.courses button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+.courses button.completed {
+    background-color: #d4edda; 
+    border-color: #c3e6cb;
+    color: #010201; 
+}
+
+.courses button.cse {
+    border-left: 4px solid #007bff;
+}
+
+.courses button.wdd {
+    border-left: 4px solid #28a745;
+}
 
 .coursework ul {
     margin-top: 10px;
@@ -120,7 +140,7 @@ main {
 
 .certificate .filter button {
     width: 20%;
-    background-color: #18100b;
+    background-color: #2a405e;
 }
 
 .certificate .courses {
@@ -131,7 +151,7 @@ main {
 
 .certificate button {
     padding: 10px;
-    background-color: #8b5a37;
+    background-color: #9c776c;
     color: white;
     border: none;
     border-radius: 5px;
