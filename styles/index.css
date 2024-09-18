@@ -92,9 +92,11 @@ main {
 .courses button.completed {
     background-color: #d4edda; 
     border-color: #c3e6cb;
-    color: #010201; 
+    color: black; 
 }
-
+.courses button.completed:hover{
+    background-color: rgb(190, 210, 159) ;
+}
 .courses button.cse {
     border-left: 4px solid #007bff;
 }
@@ -151,13 +153,16 @@ main {
 
 .certificate button {
     padding: 10px;
-    background-color: #9c776c;
+    background-color: #d6b7ae;
     color: white;
     border: none;
     border-radius: 5px;
 }
+.courses button{
+    color: black;
+}
 .courses button:hover{
-    background-color: #2a405e;
+    background-color: rgb(159, 128, 128);
 }
 footer {
     text-align: center;
