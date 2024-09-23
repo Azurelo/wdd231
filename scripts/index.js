@@ -21,8 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuItems = document.querySelectorAll('.navbar a');
 
     menuItems.forEach(item => {
+
+        item.classList.remove('current');
+
         if (item.href === currentLocation) {
-            item.classList.add('active');
+            item.classList.add('current');
         }
     });
 });
