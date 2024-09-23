@@ -62,6 +62,13 @@ h2 {
     color: black;
 }
 
+.navbar ul li a.current {
+    font-weight: bold;
+    font-style: italic;
+    color: hwb(0 86% 13%); 
+    border-bottom: 2px solid hwb(0 86% 13%);
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -172,6 +179,8 @@ footer {
     margin-top: 20px;
     font-family: "PT Mono", system-ui
 }
+
+
 
 @media screen and (max-width: 768px) {
     main {

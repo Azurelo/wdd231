@@ -16,6 +16,17 @@ document.getElementById('menu-toggle').addEventListener('click', function() {
     console.log("Clicked");
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const currentLocation = window.location.href;
+    const menuItems = document.querySelectorAll('.navbar a');
+
+    menuItems.forEach(item => {
+        if (item.href === currentLocation) {
+            item.classList.add('active');
+        }
+    });
+});
+
 const courses = [
     {
         subject: 'CSE',
