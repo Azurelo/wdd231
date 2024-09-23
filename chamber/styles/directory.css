@@ -1,0 +1,36 @@
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: large;
+}
+a{
+    color: white;
+}
+main {
+    display: block;
+    padding: 0px;
+}
+.hero{
+
+}
+.hero img{
+    width: 100%; 
+    background-size: cover ;
+    background-position: center;
+    padding-bottom: 0%;
+    max-height: 300px;
+    object-fit: cover;
+}
+footer{
+    background-color: black;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
