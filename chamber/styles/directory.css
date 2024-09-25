@@ -19,12 +19,35 @@ h1{
 .kingman-logo{
     max-width: 100px;
 }
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    font-size: 1.5rem;
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
 
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.navbar ul li a:hover {
+    color: black;
+}
+
+.navbar ul li a.current {
+    font-weight: bold;
+    font-style: italic;
+    color: hwb(0 86% 13%);
+    border-bottom: 2px solid hwb(0 86% 13%);
 }
 a{
     color: white;
@@ -45,9 +68,76 @@ main {
     max-height: 300px;
     object-fit: cover;
 }
-footer{
+#membersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-view .member-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.list-view .member-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+}
+
+.member-card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
     background-color: black;
-    margin: 0px 0px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .certificate .courses {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #2a405e;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .grid-view .member-card,
+    .list-view .member-card {
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+    }
 }

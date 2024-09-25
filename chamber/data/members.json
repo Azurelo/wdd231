@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Meta Platforms Inc.",
+        "address": "1 Hacker Way, Menlo Park, CA",
+        "phone": "650-543-4800",
+        "website": "https://www.meta.com",
+        "icon": "meta.png",
+        "membershipLevel": 3,
+        "additionalInfo": "Pioneering social networking and virtual reality"
+    },
+    {
+        "name": "Apple Inc.",
+        "address": "1 Apple Park Way, Cupertino, CA",
+        "phone": "408-996-1010",
+        "website": "https://www.apple.com",
+        "icon": "apple.png",
+        "membershipLevel": 3,
+        "additionalInfo": "Leading innovator in consumer electronics and software"
+    },
+    {
+        "name": "Microsoft Corporation",
+        "address": "One Microsoft Way, Redmond, WA",
+        "phone": "425-882-8080",
+        "website": "https://www.microsoft.com",
+        "icon": "microsoft.png",
+        "membershipLevel": 2,
+        "additionalInfo": "Global leader in software, services, and devices"
+    },
+    {
+        "name": "Tesla, Inc.",
+        "address": "3500 Deer Creek Road, Palo Alto, CA",
+        "phone": "650-681-5000",
+        "website": "https://www.tesla.com",
+        "icon": "tesla.png",
+        "membershipLevel": 2,
+        "additionalInfo": "Electric vehicles and renewable energy solutions"
+    },
+    {
+        "name": "NVIDIA Corporation",
+        "address": "2788 San Tomas Expressway, Santa Clara, CA",
+        "phone": "408-486-2000",
+        "website": "https://www.nvidia.com",
+        "icon": "nvidia.png",
+        "membershipLevel": 3,
+        "additionalInfo": "Pioneering GPU technology and AI computing"
+    },
+    {
+        "name": "The Walt Disney Company",
+        "address": "500 S Buena Vista Street, Burbank, CA",
+        "phone": "818-560-1000",
+        "website": "https://www.disney.com",
+        "icon": "disney.png",
+        "membershipLevel": 1,
+        "additionalInfo": "Entertainment and media conglomerate"
+    },
+    {
+        "name": "Google LLC",
+        "address": "1600 Amphitheatre Parkway, Mountain View, CA",
+        "phone": "650-253-0000",
+        "website": "https://www.google.com",
+        "icon": "google.png",
+        "membershipLevel": 3,
+        "additionalInfo": "Leading provider of search, advertising, and cloud computing"
+    }
+]
