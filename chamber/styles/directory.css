@@ -4,21 +4,35 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
+.head-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+h1{
+    padding: 0px;
+    margin: 5px 0px;
+}
+.kingman-logo{
+    max-width: 100px;
+}
 nav ul{
     display: flex;
     list-style: none;
     gap: 10px;
-    font-size: large;
+    font-size: 1.5rem;
+
 }
 a{
     color: white;
+    text-decoration: none;
+}
+header a:hover{
+    color: black;
 }
 main {
     display: block;
     padding: 0px;
-}
-.hero{
-
 }
 .hero img{
     width: 100%; 
