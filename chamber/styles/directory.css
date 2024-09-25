@@ -1,56 +1,62 @@
-
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.head-info{
+
+.head-info {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
-h1{
+
+h1 {
     padding: 0px;
     margin: 5px 0px;
 }
-.kingman-logo{
+
+.kingman-logo {
     max-width: 100px;
 }
+
 .menu-toggle {
     display: none;
     cursor: pointer;
     font-size: 2rem;
     color: white;
 }
-.button-container{
+
+.button-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #toggleView {
-    background-color: #4a4a4a; 
+    background-color: #4a4a4a;
     color: white;
     border: none;
     width: 30%;
-    padding: 10px 20px; 
-    border-radius: 30px; 
+    padding: 10px 20px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #toggleView:hover {
-    background-color: #3a3a3a; 
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); 
+    background-color: #3a3a3a;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 #toggleView:active {
-    background-color: #2a2a2a; 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+    background-color: #2a2a2a;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar ul {
@@ -76,25 +82,30 @@ h1{
     color: hwb(0 86% 13%);
     border-bottom: 2px solid hwb(0 86% 13%);
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
 }
-header a:hover{
+
+header a:hover {
     color: black;
 }
+
 main {
     display: block;
     padding: 0px;
 }
-.hero img{
-    width: 100%; 
-    background-size: cover ;
+
+.hero img {
+    width: 100%;
+    background-size: cover;
     background-position: center;
     padding-bottom: 0%;
     max-height: 270px;
     object-fit: cover;
 }
+
 #membersContainer {
     display: flex;
     flex-wrap: wrap;
@@ -125,12 +136,15 @@ main {
     width: 100px;
     margin-bottom: 10px;
 }
-.member-card{
+
+.member-card {
     gap: 10px;
 }
-.member-card a{
-    color:black
+
+.member-card a {
+    color: black
 }
+
 footer {
     display: flex;
     justify-content: space-evenly;
@@ -141,9 +155,11 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
     .certificate .courses {
         grid-template-columns: 1fr;
     }
+
     .navbar ul {
         display: none;
         flex-direction: column;
@@ -165,10 +181,16 @@ footer {
         width: 100%;
         flex-direction: column;
     }
-    header{
+
+    header {
         flex-direction: column;
     }
-    footer{
-        flex-direction: column;
+
+    footer div {
+        display: none;
+    }
+
+    footer div:last-child {
+        display: block;
     }
 }
