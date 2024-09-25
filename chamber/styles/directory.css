@@ -149,7 +149,6 @@ footer {
     .certificate .courses {
         grid-template-columns: 1fr;
     }
-
     .navbar ul {
         display: none;
         flex-direction: column;
@@ -176,8 +175,5 @@ footer {
     }
     footer{
         flex-direction: column;
-    }
-    footer>*{
-        margin-top:10px;
     }
 }
