@@ -92,7 +92,7 @@ main {
     background-size: cover ;
     background-position: center;
     padding-bottom: 0%;
-    max-height: 300px;
+    max-height: 270px;
     object-fit: cover;
 }
 #membersContainer {
@@ -140,12 +140,15 @@ footer {
     display: flex;
     justify-content: space-evenly;
 }
+
 @media screen and (max-width: 768px) {
     main {
         display: flex;
         flex-direction: column;
     }
-
+    #responsive-image {
+        content: url('../images/azsmall.jpg');
+    }
     .certificate .courses {
         grid-template-columns: 1fr;
     }
