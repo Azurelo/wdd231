@@ -174,4 +174,10 @@ footer {
     header{
         flex-direction: column;
     }
+    footer{
+        flex-direction: column;
+    }
+    footer>*{
+        margin-top:10px;
+    }
 }
