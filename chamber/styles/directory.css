@@ -19,10 +19,6 @@ h1 {
     margin: 5px 0px;
 }
 
-.kingman-logo {
-    max-width: 100px;
-}
-
 .menu-toggle {
     display: none;
     cursor: pointer;
