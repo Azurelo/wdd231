@@ -1,12 +1,12 @@
-const currentYearSpan = document.getElementById("currentyear");
+const currentYearSpan = document.getElementById("curyear");
 const currentYear = new Date().getFullYear();
-const lastModification = document.getElementById("lastModified")
+const lastModification = document.getElementById("lastMod")
 let oLastModif = new Date(document.lastModified);
 
 currentYearSpan.textContent = currentYear;
 
 document.addEventListener("DOMContentLoaded", function() {
-    const lastModifiedElement = document.getElementById("lastModified");
+    const lastModifiedElement = document.getElementById("lastMod");
     const lastModifiedDate = new Date(document.lastModified);
     lastModifiedElement.textContent = "Last modified: " + formatDate(lastModifiedDate);
 });
