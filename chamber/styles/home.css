@@ -32,8 +32,11 @@
 .weather, .events, .spotlight{
     padding: 10px;
     border: 1px solid #ccc;
+    text-align: center;
 }
-
+h2{
+ margin-bottom: 2%;
+}
 @media (max-width: 768px) {
     .content {
         grid-template-columns: 1fr;
