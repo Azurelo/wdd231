@@ -26,12 +26,12 @@ async function loadWeather() {
 
     const temperature = Math.round(data.main.temp);
     const description = data.weather.map(event => event.description.toUpperCase()).join(', ');
-    const forecast = await getForecast(apiKey, city);
+    const forecastHTML = await getForecast(apiKey, city);
 
     document.getElementById('weather-info').innerHTML = `
         <p>Temperature: ${temperature}°F</p>
         <p>Conditions: ${description}</p>
-        <p>3-day Forecast: ${forecast}</p>
+        <p>3-day Forecast: ${forecastHTML}</p>
     `;
 }
 
@@ -39,12 +39,21 @@ async function getForecast(apiKey, city) {
     const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
     const response = await fetch(forecastURL);
     const data = await response.json();
+    
+    // Get today and the next two days' temperatures
+    const forecastData = data.list.filter(item => item.dt_txt.includes("12:00:00")); // Get data for midday each day
 
-    const forecast = data.list.slice(0, 3).map(day => {
-        return `${day.main.temp_max.toFixed(0)}°F`;
-    }).join(', ');
+    // Get day names (today + next two days)
+    const today = new Date();
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    return forecast;
+    // Generate HTML for each day's forecast
+    const forecastHTML = forecastData.slice(0, 3).map((dayData, index) => {
+        const dayName = days[(today.getDay() + index) % 7];  // Get current day and next two days
+        return `<p>${dayName}: ${Math.round(dayData.main.temp_max)}°F</p>`;
+    });
+
+    return forecastHTML.join('');
 }
 
 loadWeather();
