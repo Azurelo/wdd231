@@ -3,6 +3,16 @@ const currentYear = new Date().getFullYear();
 const lastModification = document.getElementById("lastModified")
 let oLastModif = new Date(document.lastModified);
 
+document.addEventListener("DOMContentLoaded", function() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.navbar ul li a');
+
+    navLinks.forEach(link => {
+        if (link.href.includes(currentPath)) {
+            link.classList.add('active');
+        }
+    });
+});
 currentYearSpan.textContent = currentYear;
 
 document.addEventListener("DOMContentLoaded", function() {

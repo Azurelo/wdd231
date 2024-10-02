@@ -37,6 +37,11 @@
 h2{
  margin-bottom: 2%;
 }
+
+.navbar ul li a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
 @media (max-width: 768px) {
     .content {
         grid-template-columns: 1fr;
