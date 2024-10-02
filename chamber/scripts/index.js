@@ -59,4 +59,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         isGridView = !isGridView;
         renderMembers(members, isGridView);
     });
+
+    
 });
