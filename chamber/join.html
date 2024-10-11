@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/join.css">
-    <script defer src="scripts/home.js"></script>
     <script defer src="scripts/join.js"></script>
 </head>
 <body>
@@ -106,24 +105,26 @@
             </form>
 
             <!-- Membership Cards -->
+            <!-- Membership Cards -->
             <div class="membership-cards">
-                <div class="card" id="np-card">
+                <div class="card" data-modal="np-modal">
                     <h2>NP Membership</h2>
                     <a href="#np-modal">Learn more</a>
                 </div>
-                <div class="card" id="bronze-card">
+                <div class="card" data-modal="bronze-modal">
                     <h2>Bronze Membership</h2>
                     <a href="#bronze-modal">Learn more</a>
                 </div>
-                <div class="card" id="silver-card">
+                <div class="card" data-modal="silver-modal">
                     <h2>Silver Membership</h2>
                     <a href="#silver-modal">Learn more</a>
                 </div>
-                <div class="card" id="gold-card">
+                <div class="card" data-modal="gold-modal">
                     <h2>Gold Membership</h2>
                     <a href="#gold-modal">Learn more</a>
                 </div>
             </div>
+
 
             <!-- Modals for Membership Levels -->
             <div id="np-modal" class="modal">
