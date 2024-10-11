@@ -42,11 +42,12 @@ form input, form select, form textarea {
 }
 
 .card {
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     padding: 10px;
     margin: 10px;
     background-color: #2a405e;
-    transition: opacity 1s ease, transform 0.5s ease;
+    animation: colorChange 10s infinite ease-in-out; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 4px;
 }
 
@@ -90,6 +91,23 @@ form input, form select, form textarea {
 .join-section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+}
+@keyframes colorChange {
+    0% {
+        border-color: #828282;
+    }
+    25% {
+        border-color: #93dad5; 
+    }
+    50% {
+        border-color: #b0dfef; 
+    }
+    75% {
+        border-color: #98fb98; 
+    }
+    100% {
+        border-color: #828282; 
+    }
 }
 @media (max-width: 768px) {
     .join-section{
