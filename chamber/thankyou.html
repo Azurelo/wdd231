@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You!</title>
     <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
     <script defer src="scripts/thankyou.js"></script>
+    <script src="/chamber/scripts/index.js"></script>
 </head>
 <body>
     <header>
-        <!-- Common header -->
+        <div class="head-info">
+            <img width="100" src="images/Seal.svg" alt="Route 66">
+            <div class="head-logo">
+                <h1>Kingman</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <div class="menu-toggle">&#9776;</div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="./discover.html">Discover</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -28,7 +46,20 @@
     </main>
 
     <footer>
-        <!-- Common footer -->
+        <div class="footer-info">
+            <p><span class="bold">Kingman Chamber of Commerce</span></p>
+            <p>Route 66</p>
+            <p>Kingman, AZ 86401</p>
+            <p>info@kingmanaz.org</p>
+            <p>928-9289298</p>
+        </div>
+        <div class="footer-logos">Twitter</div>
+        <div class="project-info">
+            <p>WDD231 Class Project</p>
+            <p>Justus Schoppmann</p>
+            <p>©<span id="currentyear"></span> Kingman Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
     </footer>
 </body>
 </html>
