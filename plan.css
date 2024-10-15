@@ -5,9 +5,13 @@ body {
     color: #333;
     margin: 0;
     padding: 20px;
+    text-align: center;
 }
 h1, h2, h3 {
     color: #ff0062; 
+}
+ul{
+    list-style: none;
 }
 p {
     font-family: 'Georgia', serif; 
@@ -30,13 +34,13 @@ p {
 }
 .wireframe {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 20px 0;
 }
 .wireframe div {
-    border: 1px dashed #999;
     padding: 10px;
-    flex: 1;
     margin: 0 10px;
-    min-width: 200px;
+}
+img{
+    width: 60%;
 }
