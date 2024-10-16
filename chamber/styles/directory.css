@@ -184,13 +184,12 @@ figure img{
     transition: transform 0.3s, filter 0.3s;
     
 }
-@media (hover: hover) {
+@media (min-width: 768px) {
     img:hover {
         transform: scale(1.05);
         filter: brightness(0.8);
     }
 }
-
 
 @media (max-width: 768px) {
     .discover-container {
@@ -242,4 +241,5 @@ figure img{
     footer div:last-child {
         display: block;
     }
+
 }
