@@ -182,7 +182,7 @@ figure img{
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s, filter 0.3s;
-    
+    max-height: 250px;
 }
 @media (min-width: 768px) {
     img:hover {
