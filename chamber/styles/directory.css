@@ -54,9 +54,10 @@ h1 {
     background-color: #2a2a2a;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-.navbar ul {
+ul{
     list-style: none;
+}
+.navbar ul {
     display: flex;
     gap: 20px;
 }
@@ -149,6 +150,56 @@ footer {
     justify-content: space-evenly;
 }
 
+.discover-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #a9bce4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    position: relative;
+}
+figure img{
+    
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, filter 0.3s;
+    
+}
+@media (hover: hover) {
+    img:hover {
+        transform: scale(1.05);
+        filter: brightness(0.8);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .discover-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.sidebar h2, .sidebar p, .sidebar h3 {
+    margin: 0 0 1em;
+}
 @media screen and (max-width: 768px) {
     main {
         display: flex;
