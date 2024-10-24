@@ -47,3 +47,13 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .about-info {
+        grid-column: 1 / 2;
+    }
+}
