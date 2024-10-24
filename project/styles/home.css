@@ -37,7 +37,7 @@ main {
     background-image: url('wdd231/project/images/trick.webp');
 }
 .park{
-    background-image: url('/project/images/park.webp');
+    background-image: url('https://azurelo.github.io/wdd231/project/images/park.webp');
 }
 .hero {
     width: 100%;
