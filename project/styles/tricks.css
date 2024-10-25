@@ -29,4 +29,7 @@
     padding: 15px;
 }
 
+.dark-mode .trick-card{
+    background-color: #333;
+}
 
