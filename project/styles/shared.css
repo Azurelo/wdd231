@@ -38,6 +38,10 @@ a{
     text-decoration: none;
     color: white;
 }
+.navigation a.active {
+    text-decoration: underline;
+    color: #ff0062; 
+}
 main a{
     color: #2c2c2c;
 }
