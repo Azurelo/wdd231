@@ -6,6 +6,7 @@
     <meta name="description" content="Skateboard Haven - A hub for skateboarding enthusiasts.">
     <title>Skateboard Haven</title>
     <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/parks.css">
     <link rel="icon" href="images/skate.ico">
     <meta property="og:title" content="Skate Haven" />
     <meta property="og:type" content="website">
@@ -15,6 +16,7 @@
     <meta name="twitter:title" content="Skate Haven ">
     <meta name="twitter:description" content=" Skate Haven Parks">
     <meta name="twitter:card" content="summary">
+    <script defer src="scripts/parks.js"></script>
 </head>
 <body>
     <header>
@@ -30,7 +32,33 @@
         </nav>
     </header>
     <main>
+        <div id="park-container"></div>
 
+
+        <div id="modal" class="modal">
+            <div class="modal-content" id="modal-content">
+                
+            </div>
+            <button class="close-button" onclick="closeModal()">Close</button>
+        </div>
+        <section id="park-submission">
+            <h2>Don't see your park? Submit your park's info and it'll be added soon!</h2>
+            <form id="park-form">
+                <div class="form-group">
+                    <label for="parkName">Park Name:</label>
+                    <input type="text" id="parkName" name="parkName" required>
+                </div>
+                <div class="form-group">
+                    <label for="parkLocation">Location:</label>
+                    <input type="text" id="parkLocation" name="parkLocation" required>
+                </div>
+                <div class="form-group">
+                    <label for="parkDescription">Description:</label>
+                    <textarea id="parkDescription" name="parkDescription" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit Park</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Skateboard Haven</p>

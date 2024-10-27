@@ -9,6 +9,10 @@ body {
     margin: 0;
     text-align: center;
 }
+section{
+    padding: 0px;
+    margin: 0px;
+}
 nav {
     display: flex;
     justify-content: space-between; 
@@ -91,11 +95,15 @@ p {
 .wireframe img{
     width: 60%;
 }
+footer{
+    margin-top: 30px;
+    border-top: 1px solid gray ;
+}
 footer a{
     color: #2c2c2c;
     padding: 10px;
 }
-#darkModeToggle{
+button{
     border-radius: 5px;
     background-color: #444;
     color: #f0f0f0;
@@ -106,7 +114,7 @@ footer a{
     text-decoration: none;
     font-size: 1rem;
 }
-#darkModeToggle:hover{
+button:hover{
     cursor: pointer;
 }
 /* Dark mode styling */
