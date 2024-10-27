@@ -106,6 +106,9 @@ footer a{
     text-decoration: none;
     font-size: 1rem;
 }
+#darkModeToggle:hover{
+    cursor: pointer;
+}
 /* Dark mode styling */
 .dark-mode .navigation.active{
     color: white;
